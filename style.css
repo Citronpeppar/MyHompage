@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100%;
   margin: 0;
@@ -18,18 +19,43 @@ header {
   grid-area: header;
 }
 
+.nav-wrapper {
+  grid-area: nav;
+}
 
+main {
+  grid-area: content;
+}
+
+.about-me {
+  grid-area: about;
+}
+
+.contact-form {
+  grid-area: form;
+}
 
 .wrapper {
   /* Basic layout for the grid. Uses mobile first. */
+  
+  height: 100vh;
   display: grid;
   grid-gap: 20px;
   grid-template-areas: 
     "header"
     "nav"
     "content"
+    "about"
+    "form"
     "footer";
+    
 }
+
+#landing-page {
+  height: 100vh;
+
+}
+
 
 @media (min-width: 500px) {
   .wrapper {
@@ -39,7 +65,10 @@ header {
       "header  header"
       "nav     nav"
       "content content"
+      "about about"
+      "form form"
       "footer  footer";
+
   }
 
   #landing-page {
@@ -48,4 +77,26 @@ header {
   }
 
   
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    /* Media means the grid is changening when the view is in a specific size. 700px here. */
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content content"
+      "about about about"
+      "form form form"
+      "footer footer  footer"
+   }
+   
+}
+
+footer {
+  text-align: right;
+  margin: auto;
+  grid-area: footer;
+
 }
