@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>Livs Hemsida</title>
 </head>
 
@@ -13,90 +14,144 @@
     <!--I need(?) to get header tag in here below. Where the nav and logo are-->
     <header>
       <nav class="nav-wrapper">
-        <div class="logo">
-          <img src="/Pics/Group 11.png">
-          <strong>Liv Nachenius</strong>
+        
+        
+        <div class="menu">
+          <div>
+            <div>  
+              <ul class="main-nav">
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-suitcase" aria-hidden="true"></i>
+                      <i class="fa fa-suitcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Portfolio">Portfolio</span></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                      <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Blog">Blog</span></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="About">About</span></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!--The meny will be a burger icon when in mobile mode-->
-        <div class="burger-icon">MENU</div>
-        <ul class="nav-items main-nav mobile-hide">
-          <li class="list-item"><a href="#">Portfolio</a></li>
-          <li class="list-item"><a href="#">Blog</a></li>
-          <li class="list-item"><a href="#">About Me</a></li>
-          <li class="list-item"><a href="#">Contact</a></li>
-        </ul>
       </nav>  
     </header>
     <main>
       <div class="main-wrapper">
         <div class="wrapper">
           <div id="landing-page">
-            <h2>My name is <br>
-              <!--Should the user be able to click on my name to get to my "About me" page? or contact?-->
-              <span class="text-secondary">Liv Nachenius</span>
-              <br>
-              and i'm a
-            </h2>
-            <h1>Front-End Developer</h1>
-            <h3>In training</h3>
-            <!-- Icons so that the user easily can check me out -->
-            <!-- Should they be here or somewhere else?-->
-            <div class="icons">
-              <!--Facebook-->
-              <a href="#">
-                
-              </a>
-              <!--LinkedIn-->
-              <a href="#">
-                
-              </a>
-              <!--Github-->
-              <a href="#">
-                
-              </a>
+            <div class="landing-text">
+              <div class="landing-text-name">
+                <h2>My name is <br>
+                  <!--Should the user be able to click on my name to get to my "About me" page? or contact?-->
+                  <span class="text-secondary">Liv Nachenius</span>
+                  <br>
+                  and i'm a
+                </h2>
+              </div>
+              <div class="landing-text-profession">
+                <h1>Front-End Developer</h1>
+                <h3>In training</h3>
+                <!-- Icons so that the user easily can check me out -->
+                <!-- Should they be here or somewhere else?-->
+                <div class="icons">
+                  <!--Facebook-->
+                  <a href="#">
+                    
+                  </a>
+                  <!--LinkedIn-->
+                  <a href="#">
+                    
+                  </a>
+                  <!--Github-->
+                  <a href="#">
+                    
+                  </a>
 
+                </div>
+              </div>
+              <div class="blog-text-button">
+                  <h3>Developing Myself</h3>
+                
+                <a href="#images" class="button" id="blog-link">Blog</a>
+              
+                <img src="" alt="">
+              </div>
             </div>
-            <h2>Developing Myself</h2>
-            <a href="#images" class="button" id="blog-link">Blog</a>
           </div>
-            <img src="" alt="">
+          
 
         </div>
+          <div class="portfolio-wrapper">
+            <div class="titel">
+              <h2>Portfolio</h2>
+            </div>
 
-          <div class="caption">
-            <h3>Project One</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
-            <!--Link to github, icon or text?-->
-            <a href="#images" class="button" id="github-link">Github</a>
-            <!--Link to project thoughts-->
-            <a href="#images" class="button" id="project-link">Project</a>
-          </div>
-          <img src="" alt="">
-          <div class="caption">
-            <h3>Project Two</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
-            <!--Link to github, icon or text?-->
-            <a href="#images" class="button" id="github-link">Github</a>
-            <!--Link to project thoughts-->
-            <a href="#images" class="button" id="project-link">Project</a>
-          </div>
-          <img src="" alt="">
-          <div class="caption">
-            <h3>Project Three</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
-            <!--Link to github, icon or text?-->
-            <a href="#images" class="button" id="github-link">Github</a>
-            <!--Link to project thoughts-->
-            <a href="#images" class="button" id="project-link">Project</a>
-          </div>
-          <img src="" alt="">
-          <div class="caption">
-            <h3>Project Four</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
-            <!--Link to github, icon or text?-->
-            <a href="#images" class="button" id="github-link">Github</a>
-            <!--Link to project thoughts-->
-            <a href="#images" class="button" id="project-link">Project</a>
+            <div class="caption">
+              <img src="/Pics/debby-hudson-FO4gzqI2t84-unsplash.jpg" alt="">
+              <h3>Project One</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
+              <!--Link to github, icon or text?-->
+              <a href="#images" class="button" class="github-link">Github</a>
+              <!--Link to project thoughts-->
+              <a href="#images" class="button" id="project-link">Project</a>
+            </div>
+            
+            <div class="caption">
+              <img src="/Pics/christian-wiediger-K1ukmy8bxdA-unsplash.jpg" alt="">
+              <h3>Project Two</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus.</p>
+              <!--Link to github, icon or text?-->
+              <a href="#images" class="button" class="github-link">Github</a>
+              <!--Link to project thoughts-->
+              <a href="#images" class="button" id="project-link">Project</a>
+            </div>
+            
+            <div class="caption">
+              <img src="/Pics/gatis-vilaks-PsR93LuMcQQ-unsplash.jpg" alt="">
+              <h3>Project Three</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <!--Link to github, icon or text?-->
+              <a href="#images" class="button" class="github-link">Github</a>
+              <!--Link to project thoughts-->
+              <a href="#images" class="button" id="project-link">Project</a>
+            </div>
+          
+            <div class="caption">
+              <img src="/Pics/kishan-bishnoi-YotEWCLcTZw-unsplash.jpg" alt="">
+              <h3>Project Four</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum sint sapiente ea repudiandae, dicta magni placeat tempora dolorum perspiciatis maiores natus, odio alias beatae optio aliquid vitae praesentium quae.</p>
+              <!--Link to github, icon or text?-->
+              <a href="#images" class="button" class="github-link">Github</a>
+              <!--Link to project thoughts-->
+              <a href="#images" class="button" id="project-link">Project</a>
+            </div>
           </div>
 
   <div class="about-me">
@@ -105,13 +160,15 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta itaque adipisci alias quos dolore reprehenderit possimus culpa. Sint debitis eveniet aliquam laboriosam similique? Aliquam accusantium tempore, animi sapiente provident asperiores.</p>
   </div>           
 
-          <div class="blog">
-            <img src="" alt="">
-            <!-- This will show the latest blog post and to get to the blog the user can click to get to the blogpage --->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi enim doloremque cum sapiente fugit, minus eveniet! Earum accusamus velit beatae distinctio eligendi, delectus iste cum expedita doloribus, totam quia adipisci?</p>
-            <a href="#images" class="button" id="blog-link">Blog</a>
-          </div>
-      </div>
+  <div class="blog">
+    <img src="" alt="">
+    <!-- This will show the latest blog post and to get to the blog the user can click to get to the blogpage --->
+    <h2>Blog</h2>
+    <!-- Shows the latest blog text and picture-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi enim doloremque cum sapiente fugit, minus eveniet! Earum accusamus velit beatae distinctio eligendi, delectus iste cum expedita doloribus, totam quia adipisci?</p>
+    <a href="#images" class="button" id="blog-link">Blog</a>
+  </div>
+    
         <!--Contact Form-->
   <div class="contact-form">
     <form id="contact" action="" method="post">

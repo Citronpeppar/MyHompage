@@ -1,34 +1,249 @@
+
+
+/*
+Table of Content
+
+1. Global Styles
+2. Typography
+3. Components
+  3.1 Buttons
+
+*/
+
+
+
+
+/* 
+=============
+Global Styles
+=============
+*/
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Makes viewport work on IE10 */
+@-ms-viewport{
+  width: device-width;
+}
+
 body {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 a {
   text-decoration: none;
 }
 
-header {
+p {
+  padding: 1rem 01rem;
+}
+
+img {
+  display: block;
+  width: 100vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+
+/*header {
   position: fixed;
   grid-area: header;
-}
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
 
 .nav-wrapper {
   grid-area: nav;
 }
 
+.main-nav {
+  position: fixed;
+  top: 3.8vh;
+  left: 50vw;
+  width: 100vw;
+  transform: translate( -50%, -50%);
+  margin: 0 10 0 0;
+  padding-top: 1rem;
+  display: flex;
+  background: rgba(255, 255, 255, .4);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  z-index: 1;
+
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid rgba(0,0,0,.2);
+  
+}
+
+ul li:last-child {
+  border-right: none;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 6vw;
+  display: block;
+}
+
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto 0.3rem;
+}
+
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+ul li a:hover .icon .fa{
+  transform: translateY(-100%);
+}
+
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  color: rgb(0, 0, 0);
+  padding-bottom: 1.5rem;
+}
+
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+}
+
+/*Landing page*/
+
+#landing-page {
+  height: 100vh;
+  display: flex;
+  background: url(/Pics/Group\ 2@2x.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  flex: 0 1 60vw;
+  margin: 0;
+ 
+}
+
+.landing-text {
+  padding-top: 100px;
+  height: 50vh;
+  display: flex;
+  flex: 0 1 100vw;
+  height: 50vh;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.landing-text h1 {
+  padding-top: 20px;
+  
+}
+
+.blog-text-button {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: #30241D;
+}
+
+.text-secondary {
+  color: #D84187;
+}
+
+/* Buttons*/
+
+.button {
+  /* Change color and design later */
+  padding: 0.5rem 2rem;
+  border: 1px #D84187cc solid;
+  display: inline-block;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #D84187;
+  transition: background 500ms ease;
+  margin-top: 0.2rem;
+    
+}
+
+.button:hover {
+  background-color: #DB629A;
+}
+
+.caption a {
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+}
+
+/* Portfolio */
+
+.titel h2 {
+  
+}
+
+.portfolio-wrapper {
+  background-color: rgba(255, 226, 215, 0.459);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.caption {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.caption h3 {
+  padding-top: 1rem;
+}
+
+.caption p {
+  width: 90vw;
+}
+
+
+
+/*Grid*/
 main {
   grid-area: content;
 }
 
 .about-me {
   grid-area: about;
+}
+
+.blog {
+  grid-area: blog;
 }
 
 .contact-form {
@@ -51,10 +266,7 @@ main {
     
 }
 
-#landing-page {
-  height: 100vh;
 
-}
 
 
 @media (min-width: 500px) {
