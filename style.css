@@ -135,7 +135,7 @@ Landing Page
 #landing-page {
   height: 100vh;
   display: flex;
-  background: url(/Pics/Group\ 2@2x.png);
+  background: url(/Pics/Group2@2x.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -342,7 +342,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #75B9B2;
+  background-color: #D84187;
   color: #fff;
   margin: 0 0 5px;
   padding: 10px;
@@ -350,7 +350,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-  background: rgb(136, 190, 185);
+  background: rgb(201, 125, 160);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
@@ -447,6 +447,9 @@ Media Query
       "footer footer  footer"
    }
    
+   .nav-wrapper, .main-nav {
+     display: none;
+   }
 }
 
 footer {
