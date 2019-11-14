@@ -4,9 +4,17 @@
 Table of Content
 
 1. Global Styles
-2. Typography
-3. Components
-  3.1 Buttons
+2. Navigation
+3. Landing Page
+4. Buttons
+5. Portfolio
+6. About Me
+7. Blog
+8. Contact Form
+9. Footer
+10. Grid
+11. Media Query
+  11.1 NAV Desktop
 
 */
 
@@ -260,7 +268,7 @@ Portfolio
 
 /* 
 =============
-  About Me
+About Me
 =============
 */
 
@@ -272,7 +280,7 @@ Portfolio
 
 /* 
 =============
-    Blog
+Blog
 =============
 */
 
@@ -371,7 +379,7 @@ fieldset {
 
 /* 
 =============
-   Footer
+Footer
 =============
 */
 
@@ -384,7 +392,7 @@ footer {
 
 /* 
 =============
-    Grid
+Grid
 =============
 */
 
@@ -465,10 +473,18 @@ Media Query
       "form form form"
       "footer footer  footer"
    }
+
+    /* 
+    =============
+    NAV Desktop
+    =============
+    */
    
    .nav-wrapper, .main-nav {
      display: none;
    }
+
+   
 
    section {
     grid-template-columns: 1fr 1fr;
