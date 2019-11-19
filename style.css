@@ -41,6 +41,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+
 }
 
 a {
@@ -49,6 +50,7 @@ a {
 
 p {
   padding: 1rem 01rem;
+  font-family: "poppins" , sans-serif;
 }
 
 img {
@@ -143,7 +145,7 @@ Landing Page
 #landing-page {
   height: 100vh;
   display: flex;
-  background: url(/Pics/Group2@2x.png);
+  background: url(/Pics/MyFace2@2x.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -170,7 +172,8 @@ Landing Page
   padding-top: 20px;
   text-transform: uppercase;
   font-size: 3rem;
-  text-shadow: 1px 1px #fff
+  text-shadow: 1px 1px #fff;
+  font-weight: bold;
 }
 
 .blog-text-button {
@@ -184,8 +187,6 @@ Landing Page
 h2 {
   color: #30241D;
 }
-
-
 
 .text-secondary {
   color: #D84187;
@@ -474,17 +475,27 @@ Media Query
       "footer footer  footer"
    }
 
+  .caption p {
+    width: 50vw;
+  }
+
+  .caption img {
+    height: 50vh;
+  }
+
     /* 
     =============
     NAV Desktop
     =============
     */
    
-   .nav-wrapper, .main-nav {
+   .menu {
+     display: flex;
+     flex-wrap: wrap;
      display: none;
    }
 
-   
+
 
    section {
     grid-template-columns: 1fr 1fr;
@@ -496,6 +507,8 @@ Media Query
      margin-right: 1rem;
      width: 50vw;
    }
+
+   
 
 }
 
