@@ -149,7 +149,6 @@ Landing Page
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
   
   flex: 0 1 60vw;
   margin: 0;
@@ -228,7 +227,7 @@ Portfolio
 
 .titel {
   padding: 1.5rem;
-  background: rgb(201, 125, 160);
+  background: #0DA5A5;
   text-align: center;
   width: 100vw;
 }
